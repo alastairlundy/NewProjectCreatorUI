@@ -21,14 +21,14 @@ namespace NewProjectCreatorUI.Resources.Localizations {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class en_GB {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal en_GB() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NewProjectCreatorUI.Resources.Localizations.en-GB", typeof(en_GB).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NewProjectCreatorUI.Resources.Localizations.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -155,6 +155,24 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         internal static string Launcher_OpenProjectOrSolution_Label {
             get {
                 return ResourceManager.GetString("Launcher.OpenProjectOrSolution.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Recent.
+        /// </summary>
+        internal static string Launcher_OpenRecent_Label {
+            get {
+                return ResourceManager.GetString("Launcher.OpenRecent.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Recent.
+        /// </summary>
+        internal static string Launcher_SearchRecent_Label {
+            get {
+                return ResourceManager.GetString("Launcher.SearchRecent.Label", resourceCulture);
             }
         }
     }

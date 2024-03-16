@@ -51,4 +51,10 @@
     <data name="Launcher.ContinueWithoutCode.Label" xml:space="preserve">
         <value>Continue without code</value>
     </data>
+    <data name="Launcher.OpenRecent.Label" xml:space="preserve">
+        <value>Open Recent</value>
+    </data>
+    <data name="Launcher.SearchRecent.Label" xml:space="preserve">
+        <value>Search Recent</value>
+    </data>
 </root>
