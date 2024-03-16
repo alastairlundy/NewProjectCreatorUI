@@ -67,5 +67,95 @@ namespace NewProjectCreatorUI.Resources.Localizations {
                 return ResourceManager.GetString("Application.Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get code from an online repository like GitHub, GitLab, or Azure DevOps.
+        /// </summary>
+        internal static string Launcher_CloneRepository_Description {
+            get {
+                return ResourceManager.GetString("Launcher.CloneRepository.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone a Repository.
+        /// </summary>
+        internal static string Launcher_CloneRepository_Label {
+            get {
+                return ResourceManager.GetString("Launcher.CloneRepository.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Continue without code.
+        /// </summary>
+        internal static string Launcher_ContinueWithoutCode_Label {
+            get {
+                return ResourceManager.GetString("Launcher.ContinueWithoutCode.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose a project template with code scaffolding to get started..
+        /// </summary>
+        internal static string Launcher_CreateNewProject_Description {
+            get {
+                return ResourceManager.GetString("Launcher.CreateNewProject.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a New Project.
+        /// </summary>
+        internal static string Launcher_CreateNewProject_Label {
+            get {
+                return ResourceManager.GetString("Launcher.CreateNewProject.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Started.
+        /// </summary>
+        internal static string Launcher_GetStarted_Label {
+            get {
+                return ResourceManager.GetString("Launcher.GetStarted.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open a folder (and any code contained within) in an IDE or Code Editor..
+        /// </summary>
+        internal static string Launcher_OpenLocalFolder_Description {
+            get {
+                return ResourceManager.GetString("Launcher.OpenLocalFolder.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open a Local Folder.
+        /// </summary>
+        internal static string Launcher_OpenLocalFolder_Label {
+            get {
+                return ResourceManager.GetString("Launcher.OpenLocalFolder.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open a Visual Studio project, a CSPROJ based project, or a .sln file.
+        /// </summary>
+        internal static string Launcher_OpenProjectOrSolution_Description {
+            get {
+                return ResourceManager.GetString("Launcher.OpenProjectOrSolution.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open a Project or Solution.
+        /// </summary>
+        internal static string Launcher_OpenProjectOrSolution_Label {
+            get {
+                return ResourceManager.GetString("Launcher.OpenProjectOrSolution.Label", resourceCulture);
+            }
+        }
     }
 }
