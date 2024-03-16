@@ -54,4 +54,14 @@
         <DependentUpon>en-GB.resx</DependentUpon>
       </Compile>
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\LauncherCommands\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\Settings\LauncherSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 </Project>
