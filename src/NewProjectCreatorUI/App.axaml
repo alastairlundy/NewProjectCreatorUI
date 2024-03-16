@@ -1,12 +1,14 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="DotDevelop.NewProjectCreator.App"
-             xmlns:local="using:DotDevelop.NewProjectCreator"
+             x:Class="NewProjectCreatorUI.App"
+             xmlns:local="using:NewProjectCreatorUI"
+             xmlns:launcher="clr-namespace:NewProjectCreatorUI"
+             xmlns:newProjectCreatorUi="clr-namespace:NewProjectCreatorUI"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
-        <local:ViewLocator/>
+        <newProjectCreatorUi:ViewLocator/>
     </Application.DataTemplates>
   
     <Application.Styles>

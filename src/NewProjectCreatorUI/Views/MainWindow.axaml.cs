@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace DotDevelop.NewProjectCreator.Views;
+namespace NewProjectCreatorUI.Views;
 
 public partial class MainWindow : Window
 {

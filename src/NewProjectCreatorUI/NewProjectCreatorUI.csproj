@@ -6,11 +6,15 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-        <RootNamespace>DotDevelop.NewProjectCreator</RootNamespace>
+        <AssemblyName>NewProjectCreatorUI</AssemblyName>
+        <RootNamespace>NewProjectCreatorUI</RootNamespace>
+        <PackageId>NewProjectCreatorUI</PackageId>
+        <Authors>NewProjectCreatorUI</Authors>
+        <Company>NewProjectCreatorUI</Company>
+        <Product>NewProjectCreatorUI</Product>
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
     </ItemGroup>
 
@@ -28,17 +32,26 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="localizations\en.resx">
+      <EmbeddedResource Update="localizations\EN.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>en.Designer.cs</LastGenOutput>
+        <LastGenOutput>EN.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Localizations\en-GB.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>en-GB.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="localizations\en.Designer.cs">
+      <Compile Update="localizations\EN.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>en.resx</DependentUpon>
+        <DependentUpon>EN.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\Localizations\en-GB.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>en-GB.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 </Project>

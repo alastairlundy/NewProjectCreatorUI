@@ -1,6 +1,6 @@
 ﻿using ReactiveUI;
 
-namespace DotDevelop.NewProjectCreator.ViewModels;
+namespace NewProjectCreatorUI.ViewModels;
 
 public class ViewModelBase : ReactiveObject
 {

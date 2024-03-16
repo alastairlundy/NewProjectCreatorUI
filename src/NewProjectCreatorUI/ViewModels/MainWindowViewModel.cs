@@ -1,4 +1,4 @@
-﻿namespace DotDevelop.NewProjectCreator.ViewModels;
+﻿namespace NewProjectCreatorUI.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {

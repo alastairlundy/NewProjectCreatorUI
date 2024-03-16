@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotDevelop.Launcher", "DotDevelop.Launcher\DotDevelop.Launcher.csproj", "{D684CA9D-49E1-4738-AE3A-47D2D5693B96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewProjectCreatorUI", "NewProjectCreatorUI\NewProjectCreatorUI.csproj", "{D684CA9D-49E1-4738-AE3A-47D2D5693B96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

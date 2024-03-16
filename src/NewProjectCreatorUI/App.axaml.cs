@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using DotDevelop.NewProjectCreator.ViewModels;
-using DotDevelop.NewProjectCreator.Views;
+using NewProjectCreatorUI.ViewModels;
+using NewProjectCreatorUI.Views;
 
-namespace DotDevelop.NewProjectCreator;
+namespace NewProjectCreatorUI;
 
 public partial class App : Application
 {

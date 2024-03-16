@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DotDevelop.NewProjectCreator.localizations {
+namespace NewProjectCreatorUI.Resources.Localizations {
     using System;
     
     
@@ -21,14 +21,14 @@ namespace DotDevelop.NewProjectCreator.localizations {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class en {
+    internal class en_GB {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal en() {
+        internal en_GB() {
         }
         
         /// <summary>
@@ -38,7 +38,7 @@ namespace DotDevelop.NewProjectCreator.localizations {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DotDevelop.NewProjectCreator.localizations.en", typeof(en).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NewProjectCreatorUI.Resources.Localizations.en-GB", typeof(en_GB).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -56,6 +56,15 @@ namespace DotDevelop.NewProjectCreator.localizations {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Project Creator UI.
+        /// </summary>
+        internal static string Application_Title {
+            get {
+                return ResourceManager.GetString("Application.Title", resourceCulture);
             }
         }
     }
