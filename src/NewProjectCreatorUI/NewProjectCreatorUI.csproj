@@ -29,6 +29,7 @@
         <PackageReference Include="LocalizationKit" Version="6.0.0-beta.1" />
         <PackageReference Include="PlatformKit" Version="4.0.0-beta.1" />
         <PackageReference Include="SettingsKit" Version="6.0.0-alpha.1" />
+        <PackageReference Include="SpacedGrid-Avalonia" Version="11.0.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -36,7 +37,7 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>EN.Designer.cs</LastGenOutput>
       </EmbeddedResource>
-      <EmbeddedResource Update="Resources\Localizations\en-GB.resx">
+      <EmbeddedResource Update="Resources\Localizations\Resources.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>en-GB.Designer.cs</LastGenOutput>
       </EmbeddedResource>
@@ -48,10 +49,10 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>EN.resx</DependentUpon>
       </Compile>
-      <Compile Update="Resources\Localizations\en-GB.Designer.cs">
+      <Compile Update="Resources\Localizations\Resources.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>en-GB.resx</DependentUpon>
+        <DependentUpon>Resources.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
