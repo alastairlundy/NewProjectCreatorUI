@@ -1,6 +1,7 @@
 ﻿{
   "Locale": "en-GB",
-  "DefaultWidth": "800",
-  "DefaultHeight": "600",
-  "ShowProjectOpenHistory": "true"
+  "Width.Default": "800",
+  "Height.Default": "600",
+  "ShowProjectOpenHistory": "true",
+  "Theme": "Light"
 }
