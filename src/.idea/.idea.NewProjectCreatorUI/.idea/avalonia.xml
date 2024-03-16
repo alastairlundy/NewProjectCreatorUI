@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="NewProjectCreatorUI/App.axaml" value="NewProjectCreatorUI/NewProjectCreatorUI.csproj" />
+        <entry key="NewProjectCreatorUI/Views/LauncherView.axaml" value="NewProjectCreatorUI/NewProjectCreatorUI.csproj" />
         <entry key="NewProjectCreatorUI/Views/MainWindow.axaml" value="NewProjectCreatorUI/NewProjectCreatorUI.csproj" />
       </map>
     </option>
