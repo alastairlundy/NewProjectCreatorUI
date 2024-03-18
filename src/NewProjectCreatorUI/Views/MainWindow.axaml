@@ -4,20 +4,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:NewProjectCreatorUI.ViewModels"
         xmlns:localizations="clr-namespace:NewProjectCreatorUI.Resources.Localizations"
+        xmlns:avalonia="https://github.com/projektanker/icons.avalonia"
         mc:Ignorable="d"
         x:Class="NewProjectCreatorUI.Views.MainWindow"
         x:DataType="viewModels:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="{x:Static localizations:Resources.Application_Title}">
+        Icon="/Assets/avalonia-logo.ico">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <viewModels:MainWindowViewModel/>
     </Design.DataContext>
-    <Grid>
-        
- 
-    </Grid>
-    
+    <StackPanel>
+        <Label x:Name="TitleLabel" Content="{x:Static localizations:Resources.Application_Title}"/>
+        <Grid>
+            <Label x:Name="OpenRecentLabel" Content="{x:Static localizations:Resources.Launcher_OpenRecent_Label}"/>
+        </Grid>
+        <Grid>
+            <Label x:Name="GetStartedLabel" Content="{x:Static localizations:Resources.Launcher_GetStarted_Label}"/>
+           <Grid>
+               <Button x:Name="CloneRepositoryButton">
+                   <avalonia:Icon Value="mdi-tray-arrow-down" Background="LightGray"/>
+               </Button>
+               <Button x:Name="OpenProjectButton">
+                   <avalonia:Icon Value="mdi-file-import-outline" Background="LightGray"/>
+                
+               </Button>
+               <Button x:Name="OpenFolderButton">
+                   <avalonia:Icon Value="mdi-folder-open-outline" Background="LightGray"/>
+                
+               </Button>
+               <Button x:Name="CreateNewProjectButton">
+                   <avalonia:Icon Value="mdi-file-code-outline" Background="LightGray"/>
+               </Button>
+           </Grid>
+        </Grid>
+    </StackPanel>
 </Window>
