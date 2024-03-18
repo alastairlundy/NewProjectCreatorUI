@@ -32,6 +32,8 @@ public partial class MainWindow : Window
     private void LoadSettings()
     {
         
+        this.Height = 600;
+        this.Width = 800;
 
 
         //    this.Width = double.Parse(_launcherSettings["Width.Default"]);
