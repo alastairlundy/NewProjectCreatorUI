@@ -16,7 +16,7 @@ public partial class App : Application
 
     public override void OnFrameworkInitializationCompleted()
     {
-        Resources.Localizations.Culture = new CultureInfo("en-GB");
+        //NewProjectCreatorUI.Resources.Localizations.Resources.Culture = CultureInfo.DefaultThreadCurrentUICulture;
         
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
