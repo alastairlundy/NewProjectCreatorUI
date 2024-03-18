@@ -55,10 +55,16 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>Resources.resx</DependentUpon>
       </Compile>
+      <Compile Update="MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Controls\" />
       <Folder Include="Resources\LauncherCommands\" />
+      <Folder Include="Views\" />
     </ItemGroup>
 
     <ItemGroup>
