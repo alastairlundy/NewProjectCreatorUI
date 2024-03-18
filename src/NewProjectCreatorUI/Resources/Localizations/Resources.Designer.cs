@@ -21,21 +21,21 @@ namespace NewProjectCreatorUI.Resources.Localizations {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        public Resources() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NewProjectCreatorUI.Resources.Localizations.Resources", typeof(Resources).Assembly);
@@ -50,7 +50,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -62,7 +62,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to New Project Creator UI.
         /// </summary>
-        internal static string Application_Title {
+        public static string Application_Title {
             get {
                 return ResourceManager.GetString("Application.Title", resourceCulture);
             }
@@ -71,7 +71,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Get code from an online repository like GitHub, GitLab, or Azure DevOps.
         /// </summary>
-        internal static string Launcher_CloneRepository_Description {
+        public static string Launcher_CloneRepository_Description {
             get {
                 return ResourceManager.GetString("Launcher.CloneRepository.Description", resourceCulture);
             }
@@ -80,7 +80,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Clone a Repository.
         /// </summary>
-        internal static string Launcher_CloneRepository_Label {
+        public static string Launcher_CloneRepository_Label {
             get {
                 return ResourceManager.GetString("Launcher.CloneRepository.Label", resourceCulture);
             }
@@ -89,7 +89,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Continue without code.
         /// </summary>
-        internal static string Launcher_ContinueWithoutCode_Label {
+        public static string Launcher_ContinueWithoutCode_Label {
             get {
                 return ResourceManager.GetString("Launcher.ContinueWithoutCode.Label", resourceCulture);
             }
@@ -98,7 +98,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Choose a project template with code scaffolding to get started..
         /// </summary>
-        internal static string Launcher_CreateNewProject_Description {
+        public static string Launcher_CreateNewProject_Description {
             get {
                 return ResourceManager.GetString("Launcher.CreateNewProject.Description", resourceCulture);
             }
@@ -107,7 +107,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Create a New Project.
         /// </summary>
-        internal static string Launcher_CreateNewProject_Label {
+        public static string Launcher_CreateNewProject_Label {
             get {
                 return ResourceManager.GetString("Launcher.CreateNewProject.Label", resourceCulture);
             }
@@ -116,7 +116,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Get Started.
         /// </summary>
-        internal static string Launcher_GetStarted_Label {
+        public static string Launcher_GetStarted_Label {
             get {
                 return ResourceManager.GetString("Launcher.GetStarted.Label", resourceCulture);
             }
@@ -125,7 +125,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Open a folder (and any code contained within) in an IDE or Code Editor..
         /// </summary>
-        internal static string Launcher_OpenLocalFolder_Description {
+        public static string Launcher_OpenLocalFolder_Description {
             get {
                 return ResourceManager.GetString("Launcher.OpenLocalFolder.Description", resourceCulture);
             }
@@ -134,7 +134,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Open a Local Folder.
         /// </summary>
-        internal static string Launcher_OpenLocalFolder_Label {
+        public static string Launcher_OpenLocalFolder_Label {
             get {
                 return ResourceManager.GetString("Launcher.OpenLocalFolder.Label", resourceCulture);
             }
@@ -143,7 +143,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Open a Visual Studio project, a CSPROJ based project, or a .sln file.
         /// </summary>
-        internal static string Launcher_OpenProjectOrSolution_Description {
+        public static string Launcher_OpenProjectOrSolution_Description {
             get {
                 return ResourceManager.GetString("Launcher.OpenProjectOrSolution.Description", resourceCulture);
             }
@@ -152,7 +152,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Open a Project or Solution.
         /// </summary>
-        internal static string Launcher_OpenProjectOrSolution_Label {
+        public static string Launcher_OpenProjectOrSolution_Label {
             get {
                 return ResourceManager.GetString("Launcher.OpenProjectOrSolution.Label", resourceCulture);
             }
@@ -161,7 +161,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Open Recent.
         /// </summary>
-        internal static string Launcher_OpenRecent_Label {
+        public static string Launcher_OpenRecent_Label {
             get {
                 return ResourceManager.GetString("Launcher.OpenRecent.Label", resourceCulture);
             }
@@ -170,7 +170,7 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         /// <summary>
         ///   Looks up a localized string similar to Search Recent.
         /// </summary>
-        internal static string Launcher_SearchRecent_Label {
+        public static string Launcher_SearchRecent_Label {
             get {
                 return ResourceManager.GetString("Launcher.SearchRecent.Label", resourceCulture);
             }
