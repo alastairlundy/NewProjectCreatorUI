@@ -8,36 +8,111 @@
         mc:Ignorable="d"
         x:Class="NewProjectCreatorUI.Views.MainWindow"
         x:DataType="viewModels:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico">
+        Icon="/Assets/avalonia-logo.ico" ShowInTaskbar="True" MinHeight="450" MinWidth="700">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <viewModels:MainWindowViewModel/>
     </Design.DataContext>
-    <StackPanel>
-        <Label x:Name="TitleLabel" Content="{x:Static localizations:Resources.Application_Title}"/>
+    <StackPanel Spacing="1">
+        <Label x:Name="TitleLabel" FontSize="22" Content="{x:Static localizations:Resources.Application_Title}"/>
         <Grid>
-            <Label x:Name="OpenRecentLabel" Content="{x:Static localizations:Resources.Launcher_OpenRecent_Label}"/>
-        </Grid>
-        <Grid>
-            <Label x:Name="GetStartedLabel" Content="{x:Static localizations:Resources.Launcher_GetStarted_Label}"/>
-           <Grid>
-               <Button x:Name="CloneRepositoryButton">
-                   <avalonia:Icon Value="mdi-tray-arrow-down" Background="LightGray"/>
-               </Button>
-               <Button x:Name="OpenProjectButton">
-                   <avalonia:Icon Value="mdi-file-import-outline" Background="LightGray"/>
-                
-               </Button>
-               <Button x:Name="OpenFolderButton">
-                   <avalonia:Icon Value="mdi-folder-open-outline" Background="LightGray"/>
-                
-               </Button>
-               <Button x:Name="CreateNewProjectButton">
-                   <avalonia:Icon Value="mdi-file-code-outline" Background="LightGray"/>
-               </Button>
-           </Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            
+          <StackPanel Grid.Row="1" Grid.Column="1" Spacing="8">
+              <Label x:Name="OpenRecentLabel" FontSize="18" Content="{x:Static localizations:Resources.Launcher_OpenRecent_Label}"/>
+              
+              <StackPanel Spacing="5">
+                  <TextBox x:Name="RecentSearchBox" TextAlignment="Left" VerticalAlignment="Center" Padding="20 11" FontSize="12"/>
+                  
+                  <TreeView x:Name="RecentItemsTreeView" IsVisible="False"/>
+              </StackPanel>
+          </StackPanel>
+            
+              <StackPanel Grid.Row="1" Grid.Column="3" Spacing="8">
+                <Label x:Name="GetStartedLabel" FontSize="18" Content="{x:Static localizations:Resources.Launcher_GetStarted_Label}"/>
+              
+                <StackPanel Spacing="5">
+                    <Button x:Name="CloneRepositoryButton" Background="WhiteSmoke" Click="CloneRepositoryButton_OnClick">
+                    <Grid>
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="*"></ColumnDefinition>
+                           <ColumnDefinition Width="10"></ColumnDefinition>
+                           <ColumnDefinition Width="300"></ColumnDefinition>
+                       </Grid.ColumnDefinitions>
+                       
+                       <avalonia:Icon Grid.Column="0" Value="mdi-tray-arrow-down" FontSize="32"/>
+                    
+                       <StackPanel Grid.Column="2">
+                           <Label VerticalContentAlignment="Center" FontSize="18" Content="{x:Static localizations:Resources.Launcher_CloneRepository_Label}"/>
+                           <TextBlock TextWrapping="Wrap" FontSize="12" Text="{x:Static localizations:Resources.Launcher_CloneRepository_Description}"/>
+                       </StackPanel>
+                   </Grid>
+                </Button>
+                <Button x:Name="OpenProjectButton" Background="WhiteSmoke">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="10"></ColumnDefinition>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                       
+                        <avalonia:Icon Grid.Column="0" Value="mdi-file-import-outline" FontSize="32"/>
+                    
+                        <StackPanel Grid.Column="2">
+                            <Label VerticalContentAlignment="Center" FontSize="18" HorizontalAlignment="Left" Content="{x:Static localizations:Resources.Launcher_OpenProjectOrSolution_Label}"/>
+                            <TextBlock TextWrapping="Wrap" FontSize="12" Text="{x:Static localizations:Resources.Launcher_OpenProjectOrSolution_Description}"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+                <Button x:Name="OpenFolderButton" Background="WhiteSmoke">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="10"></ColumnDefinition>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                       
+                        <avalonia:Icon Grid.Column="0" Value="mdi-folder-open-outline" FontSize="32"/>
+                    
+                        <StackPanel Grid.Column="2">
+                            <Label VerticalContentAlignment="Center" FontSize="18" Content="{x:Static localizations:Resources.Launcher_OpenLocalFolder_Label}"/>
+                            <TextBlock TextWrapping="Wrap" FontSize="12" Text="{x:Static localizations:Resources.Launcher_OpenLocalFolder_Description}"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+                <Button x:Name="CreateNewProjectButton" Background="WhiteSmoke">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="10"></ColumnDefinition>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                       
+                        <avalonia:Icon Grid.Column="0" Value="mdi-file-code-outline" FontSize="32"/>
+                    
+                        <StackPanel Grid.Column="2">
+                            <Label VerticalContentAlignment="Center" FontSize="18" Content="{x:Static localizations:Resources.Launcher_CreateNewProject_Label}"/>
+                            <TextBlock TextWrapping="Wrap" FontSize="12" Text="{x:Static localizations:Resources.Launcher_CreateNewProject_Description}"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+                <Label x:Name="ContinueLink" HorizontalAlignment="Center" FontSize="14" Foreground="CornflowerBlue" Content="{x:Static localizations:Resources.Launcher_ContinueWithoutCode_Label}" Tapped="ContinueLink_OnTapped"/>
+            </StackPanel>
+                </StackPanel>
+            
         </Grid>
     </StackPanel>
 </Window>
