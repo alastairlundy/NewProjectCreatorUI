@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Avalonia.Controls;
+using Avalonia.Input;
+using Avalonia.Interactivity;
 using LocalizationKit.Providers;
 using SettingsKit;
 
@@ -12,7 +14,7 @@ public partial class MainWindow : Window
     private SettingsManager<string> _settingsManager;
 
     private Dictionary<string, string> _launcherSettings;
-    
+
     public MainWindow()
     {
         InitializeComponent();
@@ -34,5 +36,15 @@ public partial class MainWindow : Window
 
         //    this.Width = double.Parse(_launcherSettings["Width.Default"]);
         //   this.Height = double.Parse(_launcherSettings["Height.Default"]);
+    }
+
+    private void ContinueLink_OnTapped(object? sender, TappedEventArgs e)
+    {
+     
+    }
+
+    private void CloneRepositoryButton_OnClick(object? sender, RoutedEventArgs e)
+    {
+      
     }
 }
