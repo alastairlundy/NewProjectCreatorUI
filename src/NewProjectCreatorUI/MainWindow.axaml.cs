@@ -39,14 +39,4 @@ public partial class MainWindow : Window
         //    this.Width = double.Parse(_launcherSettings["Width.Default"]);
         //   this.Height = double.Parse(_launcherSettings["Height.Default"]);
     }
-
-    private void ContinueLink_OnTapped(object? sender, TappedEventArgs e)
-    {
-     
-    }
-
-    private void CloneRepositoryButton_OnClick(object? sender, RoutedEventArgs e)
-    {
-      
-    }
 }
