@@ -48,13 +48,25 @@
     <data name="Launcher.CreateNewProject.Description" xml:space="preserve">
         <value>Choose a project template with code scaffolding to get started.</value>
     </data>
-    <data name="Launcher.ContinueWithoutCode.Label" xml:space="preserve">
-        <value>Continue without code</value>
-    </data>
     <data name="Launcher.OpenRecent.Label" xml:space="preserve">
         <value>Open Recent</value>
     </data>
     <data name="Launcher.SearchRecent.Label" xml:space="preserve">
         <value>Search Recent</value>
+    </data>
+    <data name="Launcher.OpenFolder.Label" xml:space="preserve">
+        <value>Open Folder</value>
+    </data>
+    <data name="RepoCloner.RepoUrl.Label" xml:space="preserve">
+        <value>Repository URL</value>
+    </data>
+    <data name="RepoCloner.CloneFolder.Label" xml:space="preserve">
+        <value>Clone folder</value>
+    </data>
+    <data name="RepoCloner.Browse.Label" xml:space="preserve">
+        <value>Browse a Repository</value>
+    </data>
+    <data name="RepoCloner.RepoUrlEntry.Label" xml:space="preserve">
+        <value>Enter a Git Repository URL</value>
     </data>
 </root>
