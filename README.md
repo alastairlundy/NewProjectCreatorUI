@@ -26,5 +26,4 @@ This project is licensed the LGPLv3 license. - This is intended to allow others 
   * [ ] UI
     * [ ] UI for choosing which IDE or Code Editor to use for   
   * [ ] Functionality
-    * [ ] Detect locally installed IDEs and Code Editors
-    * [ ]  
+    * [ ] Detect locally installed IDEs and Code Editors associated with that file type
