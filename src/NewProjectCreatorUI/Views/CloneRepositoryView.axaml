@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:localizations="clr-namespace:NewProjectCreatorUI.Resources.Localizations"
+             xmlns:avalonia="https://github.com/projektanker/icons.avalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="NewProjectCreatorUI.Views.CloneRepositoryView">
     <StackPanel Spacing="1">
@@ -10,25 +11,52 @@
 
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>  <!-- Row 0 !-->
                 <RowDefinition Height="25"/>
-                <RowDefinition Height="20"/>
-                <RowDefinition Height="5"/>
-                <RowDefinition Height="10"/>
-                <RowDefinition Height="50"/>
-                
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>   <!-- Row 2 !-->
+                <RowDefinition Height="20"/> 
+                <RowDefinition Height="*"/>  <!-- Row 4 !-->
+                <RowDefinition Height="*"/>  <!-- Row 5 !-->
+                <RowDefinition Height="5"/>  
+                <RowDefinition Height="*"/>  <!-- Row 7 !-->
+                <RowDefinition Height="*"/>  <!-- Row 8 !-->
+                <RowDefinition Height="50"/> 
+                <RowDefinition Height="*"/>  <!-- Row 10 !-->
+                <RowDefinition Height="*"/>  <!-- Row 11 !-->
+                <RowDefinition Height="*"/>  <!-- Row 12 !-->
+                <RowDefinition Height="*"/>  <!-- Row 13 !-->
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>  <!-- Row 15 !-->
             </Grid.RowDefinitions>
             
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-            <Label Grid.Column="0" Grid.Row="0" Content="{x:Static localizations:Resources.Application_Title}"/>
+            <Label Grid.Column="0" Grid.Row="0" FontSize="22" Content="{x:Static localizations:Resources.Launcher_CloneRepository_Label}"/>
+            <Label Grid.Column="0" Grid.Row="2" FontSize="18" Content="{x:Static localizations:Resources.RepoCloner_RepoUrl_Label}"/>
             
+            <Label Grid.Column="0" Grid.Row="4" FontSize="13" Content="{x:Static localizations:Resources.RepoCloner_RepoUrlEntry_Label}"/>
+            <TextBox Grid.Column="0" Grid.Row="5" FontSize="13" x:Name="RepoUrlBox"/>
             
+            <Label Grid.Column="0" Grid.Row="7" FontSize="13" Content="{x:Static localizations:Resources.RepoCloner_Path_Label}"/>
+            <TextBox Grid.Column="0" Grid.Row="8" FontSize="13" x:Name="PathBox"/>
+            
+            <Button Grid.Column="2"  Grid.Row="8" Content="..." x:Name="PathBrowseButton" Click="PathBrowseButton_OnClick"/>
+            
+            <Label Grid.Column="0" Grid.Row="10" FontSize="16" Content="{x:Static localizations:Resources.RepoCloner_Browse_Label}"/>
+            
+            <Button Grid.Column="0" Grid.Row="11" x:Name="GitHubConnectButton" avalonia:Attached.Icon="fa-brands fa-github" FontSize="16" Content="{x:Static localizations:Resources.RepoCloner_RepoProviders_GitHub_Label}" Click="GitHubConnectButton_OnClick"/>
+            <Button Grid.Column="0" Grid.Row="12" x:Name="AzureDevOpsConnectButton" FontSize="16" Content="{x:Static localizations:Resources.RepoCloner_RepoProviders_AzureDevOps_Label}" Click="AzureDevOpsConnectButton_OnClick"/>
+            <Button Grid.Column="0" Grid.Row="13" x:Name="GitLabConnectButton" avalonia:Attached.Icon="fa-brands fa-gitlab" FontSize="16" Content="{x:Static localizations:Resources.RepoCloner_RepoProviders_GitHub_Label}" Click="GitLabConnectButton_OnClick"/>
+
+            <Button Grid.Column="3" Grid.Row="15" x:Name="BackButton" FontSize="16" Content="{x:Static localizations:Resources.Launcher_BackBtn_Label}" Click="BackButton_OnClick"/>
+            <Button Grid.Column="3" Grid.Row="15" x:Name="CloneButton" FontSize="16" Content="{x:Static localizations:Resources.Launcher_CloneBtn_Label}" Click="CloneButton_OnClick"/>
+
         </Grid>
     </StackPanel>
 </UserControl>
