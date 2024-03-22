@@ -69,6 +69,24 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Launcher_BackBtn_Label {
+            get {
+                return ResourceManager.GetString("Launcher.BackBtn.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone.
+        /// </summary>
+        public static string Launcher_CloneBtn_Label {
+            get {
+                return ResourceManager.GetString("Launcher.CloneBtn.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get code from an online repository like GitHub, GitLab, or Azure DevOps.
         /// </summary>
         public static string Launcher_CloneRepository_Description {
@@ -191,6 +209,42 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         public static string RepoCloner_CloneFolder_Label {
             get {
                 return ResourceManager.GetString("RepoCloner.CloneFolder.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path.
+        /// </summary>
+        public static string RepoCloner_Path_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.Path.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone from Azure DevOps.
+        /// </summary>
+        public static string RepoCloner_RepoProviders_AzureDevOps_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.RepoProviders.AzureDevOps.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone from GitHub.
+        /// </summary>
+        public static string RepoCloner_RepoProviders_GitHub_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.RepoProviders.GitHub.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone from GitLab.
+        /// </summary>
+        public static string RepoCloner_RepoProviders_GitLab_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.RepoProviders.GitLab.Label", resourceCulture);
             }
         }
         

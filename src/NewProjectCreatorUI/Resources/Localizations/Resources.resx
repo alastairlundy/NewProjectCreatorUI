@@ -69,4 +69,22 @@
     <data name="RepoCloner.RepoUrlEntry.Label" xml:space="preserve">
         <value>Enter a Git Repository URL</value>
     </data>
+    <data name="RepoCloner.Path.Label" xml:space="preserve">
+        <value>Path</value>
+    </data>
+    <data name="RepoCloner.RepoProviders.GitHub.Label" xml:space="preserve">
+        <value>Clone from GitHub</value>
+    </data>
+    <data name="RepoCloner.RepoProviders.AzureDevOps.Label" xml:space="preserve">
+        <value>Clone from Azure DevOps</value>
+    </data>
+    <data name="RepoCloner.RepoProviders.GitLab.Label" xml:space="preserve">
+        <value>Clone from GitLab</value>
+    </data>
+    <data name="Launcher.BackBtn.Label" xml:space="preserve">
+        <value>Back</value>
+    </data>
+    <data name="Launcher.CloneBtn.Label" xml:space="preserve">
+        <value>Clone</value>
+    </data>
 </root>
