@@ -87,15 +87,6 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Continue without code.
-        /// </summary>
-        public static string Launcher_ContinueWithoutCode_Label {
-            get {
-                return ResourceManager.GetString("Launcher.ContinueWithoutCode.Label", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Choose a project template with code scaffolding to get started..
         /// </summary>
         public static string Launcher_CreateNewProject_Description {
@@ -119,6 +110,15 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         public static string Launcher_GetStarted_Label {
             get {
                 return ResourceManager.GetString("Launcher.GetStarted.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Folder.
+        /// </summary>
+        public static string Launcher_OpenFolder_Label {
+            get {
+                return ResourceManager.GetString("Launcher.OpenFolder.Label", resourceCulture);
             }
         }
         
@@ -173,6 +173,42 @@ namespace NewProjectCreatorUI.Resources.Localizations {
         public static string Launcher_SearchRecent_Label {
             get {
                 return ResourceManager.GetString("Launcher.SearchRecent.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse a Repository.
+        /// </summary>
+        public static string RepoCloner_Browse_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.Browse.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clone folder.
+        /// </summary>
+        public static string RepoCloner_CloneFolder_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.CloneFolder.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repository URL.
+        /// </summary>
+        public static string RepoCloner_RepoUrl_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.RepoUrl.Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter a Git Repository URL.
+        /// </summary>
+        public static string RepoCloner_RepoUrlEntry_Label {
+            get {
+                return ResourceManager.GetString("RepoCloner.RepoUrlEntry.Label", resourceCulture);
             }
         }
     }
